@@ -1,7 +1,7 @@
 {
     "name": "Multiple Choice Questions",
     "short_name": "MCQ",
-    "start_url": "/testPWA/index.html",
+    "start_url": "/testPWA/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
