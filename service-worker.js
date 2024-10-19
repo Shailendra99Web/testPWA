@@ -1,15 +1,15 @@
 const CACHE_NAME = 'mcq-site-cache-v1';
 const urlsToCache = [
     '/',
-    '/index.html',
-    '/styles.css',
-    '/utils.css',
-    '/script.js',
-    '/android-chrome-192x192.png',
-    '/android-chrome-512x512.png',
-    '/favicon.ico',
-    '/img/sad-emoji.png',
-    '/img/smile-emoji.webp'
+    '/testPWA/index.html',
+    '/testPWA/styles.css',
+    '/testPWA/utils.css',
+    '/testPWA/script.js',
+    '/testPWA/android-chrome-192x192.png',
+    '/testPWA/android-chrome-512x512.png',
+    '/testPWA/favicon.ico',
+    '/testPWA/img/sad-emoji.png',
+    '/testPWA/img/smile-emoji.webp'
 ];
 
 self.addEventListener('install', (event) => {
