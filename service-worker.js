@@ -1,6 +1,6 @@
 const CACHE_NAME = 'mcq-site-cache-v1';
 const urlsToCache = [
-    '/',
+    '/testPWA/',
     '/testPWA/index.html',
     '/testPWA/styles.css',
     '/testPWA/utils.css',
