@@ -1,7 +1,7 @@
 {
     "name": "Multiple Choice Questions",
     "short_name": "MCQ",
-    "start_url": "/testPWA/",
+    "start_url": "https://shailendra99web.github.io/testPWA/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
