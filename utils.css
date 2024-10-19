@@ -1,0 +1,75 @@
+/* Utility class */
+
+.tap-highlight-none{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+.fs-9rem{
+    font-size: .9rem;
+}
+
+.text-nowrap{
+    white-space: nowrap;
+}
+
+.bg-info2{
+    background-color: #83ddeb;
+}
+
+.bg-danger2{
+    background-color: rgb(255, 54, 54);
+}
+
+.bg-success2{
+    background-color: green;
+}
+
+.text-info2{
+    color: #0c5460!important;
+}
+
+.text-success2{
+    color: #0d8d2a!important;
+}
+
+.text-danger2{
+    color:rgb(225, 67, 67);
+}
+
+.pb-4px{
+    padding-bottom: 4px;
+}
+
+.ls-none{
+    list-style-type: none;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.openSans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.height-50px{
+    height:50px;
+}

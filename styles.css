@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Open+Sans&family=Poppins&display=swap');
+
+html{
+    height: 100vh; /* Helps to vertically center the content */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    height: 100%
+}
+
+#difficulty-btn{
+    padding: 0.25rem 0.5rem;
+}
+
+#difficulty-btn:hover{
+    background-color: #e0a800!important;
+}
+
+#difficulty{
+    left: -15%;
+    top: 100%;
+    white-space: nowrap;
+    padding: 0.25rem 0.5rem;
+    margin: 3px 0px;
+    z-index: 1;
+    font-size: small;
+    display: none;
+}
+
+/* To explain what is 'Medium' */
+#difficulty-box:hover #difficulty{
+    display: block!important;
+}
+
+#questionBox {
+    background-color: #91f0ff; /* Light blue background */
+    border-color: #bee5eb; /* Border color */
+    color: #0c5460; /* Text color */
+    padding: 15px; /* More padding for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    /* Other custom styles if needed */
+}
+
+#questionPoints{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    font-size: 13px;
+}
+
+.back-btn:hover{
+    color:#aaaaaa!important;
+}
+
+/* Turn the background color into green if the answer is correct */
+.bg-correct{
+    background: linear-gradient(to left, white 50%, green 50%) right;
+    background-size: 200%;
+}
+.bg-correct:hover{
+    background: linear-gradient(to left, #f8f9fa 50%, green 50%) right;
+    background-size: 200%;
+}
+
+/* Turn the background color into red if the answer is correct */
+.bg-wrong{
+    background: linear-gradient(to left, white 50%, rgb(255, 54, 54) 50%) right;
+    background-size: 200%;
+}
+.bg-wrong:hover{
+    background: linear-gradient(to left, #f8f9fa 50%, rgb(255, 54, 54) 50%) right;
+    background-size: 200%;
+}
+
+/* Add only custom styles here, if necessary, as Bootstrap handles most styling */
+.list-group-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.list-group-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Width of the green stripe */
+    background-color: rgb(23, 162, 184); /* Green color */
+    border-top-left-radius: 5px; /* Rounded corner on the top-left */
+    border-bottom-left-radius: 5px; /* Rounded corner on the bottom-left */
+}
+
+.list-group-item-action:hover {
+    cursor: pointer;
+}
+
+.answer-bar{
+    border-top-left-radius: 7px!important; /* Rounded corner on the top-left to hide red background*/
+    border-bottom-left-radius: 7px!important; /* Rounded corner on the bottom-left to hide red background*/
+    transition:  background .5s ease-out; /* Animations or transitions for smoother feel */
+}
+
+.answer-bar-show-color{
+    color: white!important;
+    background-position: left!important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 991px) and (min-width: 767px), (max-width: 380px){
+    #pro-text{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 581px){
+    body{
+        padding:0;
+    }
+}
+
+@media only screen and (max-width: 354px){
+    #title-box{
+        flex-direction: column;
+    }
+    #pro-text{
+        display: inline;
+    }
+    .back-btn{
+        position: absolute;
+        left: 5px;
+    }
+    #success-rate{
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 298px){
+    #ques-out-of{
+        display: none!important;
+    }
+}
